@@ -9,11 +9,11 @@ NumberOfManuals=5
 HasPedals=N
 NumberOfEnclosures=3
 NumberOfTremulants=2
-NumberOfWindchestGroups=4
+NumberOfWindchestGroups=5
 NumberOfReversiblePistons=0
 NumberOfGenerals=3
 NumberOfDivisionalCouplers=0
-NumberOfPanels=2
+NumberOfPanels=4
 NumberOfSwitches=2
 NumberOfRanks=25
 DivisionalsStoreIntermanualCouplers=Y
@@ -56,7 +56,8 @@ StopRate=80
 
 [WindchestGroup001]
 Name=Pedal
-NumberOfEnclosures=0
+NumberOfEnclosures=1
+Enclosure001=003
 NumberOfTremulants=1
 Tremulant001=002
 
@@ -75,6 +76,11 @@ NumberOfTremulants=1
 Tremulant001=001
 
 [WindchestGroup004]
+Name=Orchestral Stops
+NumberOfEnclosures=0
+NumberOfTremulants=0
+
+[WindchestGroup005]
 Name=Effect
 NumberOfEnclosures=0
 NumberOfTremulants=0
@@ -327,7 +333,7 @@ NumberOfTremulants=1
 Tremulant001=001
 
 [Manual004]
-Name=INSTRUMENTS
+Name=ORCHESTRAL STOPS
 NumberOfLogicalKeys=61
 FirstAccessibleKeyLogicalKeyNumber=1
 FirstAccessibleKeyMIDINoteNumber=36
@@ -2283,7 +2289,7 @@ FirstAccessiblePipeLogicalKeyNumber=1
 NumberOfAccessiblePipes=1
 FirstAccessiblePipeLogicalPipeNumber=1
 NumberOfLogicalPipes=1
-WindchestGroup=004
+WindchestGroup=005
 Pipe001=OrganInstallationPackages\001161\NOISES\Blower\060-C.wav
 Pipe001CuePoint=916000
 Pipe001LoopCount=1
@@ -3023,6 +3029,7 @@ PositionY=85
 DispLabelColour=WHITE
 DispLabelFontSize=15
 Image=OrganInstallationPackages\001161\IMAGES FILES\FIXED\DISPLAYS\display-numbers.png
+TextBreakWidth=30
 
 [Panel000Element008]
 Type=P10
@@ -3457,10 +3464,10 @@ TextBreakWidth=0
 
 
 [Panel001]
-Name=Organ Settings
+Name=Orchestral Stops
 HasPedals=Y
 NumberOfImages=1
-NumberOfGUIElements=52
+NumberOfGUIElements=23
 DispScreenSizeHoriz=1024
 DispScreenSizeVert=600
 DispDrawstopBackgroundImageNum=2
@@ -3488,7 +3495,7 @@ DispTrimAboveExtraRows=Y
 DispExtraDrawstopRowsAboveExtraButtonRows=N
 
 [Panel001Image001]
-Image=OrganInstallationPackages\001161\IMAGES FILES\ORGAN SETTINGS\backgroud-organsettings.png
+Image=OrganInstallationPackages\001161\IMAGES FILES\ORCHESTRAL STOPS\background-orchestralstops.png
 
 [Panel001Element001]
 Type=CurrFileName
@@ -3699,7 +3706,251 @@ MouseRectWidth=1
 MouseRectHeight=1
 TextBreakWidth=0
 
-[Panel001Element024]
+
+[Panel002]
+Name=Organ Settings
+HasPedals=Y
+NumberOfImages=1
+NumberOfGUIElements=52
+DispScreenSizeHoriz=1024
+DispScreenSizeVert=600
+DispDrawstopBackgroundImageNum=2
+DispConsoleBackgroundImageNum=2
+DispKeyHorizBackgroundImageNum=2
+DispKeyVertBackgroundImageNum=2
+DispDrawstopInsetBackgroundImageNum=2
+DispControlLabelFont=Arial
+DispShortcutKeyLabelFont=Arial
+DispShortcutKeyLabelColour=BLACK
+DispGroupLabelFont=Arial
+DispDrawstopCols=2
+DispDrawstopRows=1
+DispDrawstopColsOffset=N
+DispPairDrawstopCols=N
+DispExtraDrawstopRows=0
+DispExtraDrawstopCols=0
+DispButtonCols=1
+DispExtraButtonRows=0
+DispExtraPedalButtonRow=N
+DispButtonsAboveManuals=N
+DispTrimAboveManuals=N
+DispTrimBelowManuals=N
+DispTrimAboveExtraRows=Y
+DispExtraDrawstopRowsAboveExtraButtonRows=N
+
+[Panel002Image001]
+Image=OrganInstallationPackages\001161\IMAGES FILES\ORGAN SETTINGS\backgroud-organsettings.png
+
+[Panel002Element001]
+Type=CurrFileName
+PositionX=750
+PositionY=8
+DispLabelColour=WHITE
+DispLabelFontSize=11
+Image=OrganInstallationPackages\001161\IMAGES FILES\FIXED\DISPLAYS\display-combsfilename.png
+
+[Panel002Element002]
+Type=TransposeLabel
+PositionX=85
+PositionY=102
+DispLabelColour=WHITE
+DispLabelFontSize=15
+Image=OrganInstallationPackages\001161\IMAGES FILES\FIXED\DISPLAYS\display-numbers.png
+
+[Panel002Element003]
+Type=TransposeUp
+PositionX=206
+PositionY=85
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-transposer-up.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-transposer-up.png
+MouseRadius=0
+TextBreakWidth=0
+
+[Panel002Element004]
+Type=TransposeDown
+PositionX=206
+PositionY=140
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-transposer-down.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-transposer-down.png
+MouseRadius=0
+TextBreakWidth=0
+
+[Panel002Element005]
+Type=Switch
+Switch=001
+PositionX=102
+PositionY=238
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-readinglight-on.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-readinglight-off.png
+MouseRadius=0
+TextBreakWidth=0
+
+[Panel002Element006]
+Type=Switch
+Switch=002
+PositionX=190
+PositionY=238
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-externallight-on.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-externallight-off.png
+MouseRadius=0
+TextBreakWidth=0
+
+[Panel002Element007]
+Type=SequencerLabel
+PositionX=462
+PositionY=85
+DispLabelColour=WHITE
+DispLabelFontSize=15
+Image=OrganInstallationPackages\001161\IMAGES FILES\FIXED\DISPLAYS\display-numbers.png
+
+[Panel002Element008]
+Type=P10
+PositionX=595
+PositionY=92
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\bnt-combs-up.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\bnt-combs-up.png
+MouseRadius=0
+TextBreakWidth=0
+
+[Panel002Element009]
+Type=M10
+PositionX=360
+PositionY=92
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-combs-down.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-combs-down.png
+MouseRadius=0
+TextBreakWidth=0
+
+[Panel002Element010]
+Type=Insert
+PositionX=359
+PositionY=164
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\bnt-insert.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\bnt-insert.png
+MouseRadius=0
+TextBreakWidth=0
+
+[Panel002Element011]
+Type=Delete
+PositionX=439
+PositionY=164
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-delete.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-delete.png
+MouseRadius=0
+TextBreakWidth=0
+
+[Panel002Element012]
+Type=Full
+PositionX=519
+PositionY=164
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-full.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-full.png
+MouseRadius=0
+TextBreakWidth=0
+
+[Panel002Element013]
+Type=SaveFile
+PositionX=599
+PositionY=164
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-updatefile-on.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-updatefile-off.png
+MouseRadius=0
+TextBreakWidth=0
+
+[Panel002Element014]
+Type=Set
+PositionX=359
+PositionY=218
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-set-on.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-set-off.png
+MouseRadius=0
+TextRectLeft=0
+TextBreakWidth=0
+
+[Panel002Element015]
+Type=Regular
+PositionX=439
+PositionY=218
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-regular-on.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-regular-off.png
+MouseRadius=0
+TextRectLeft=60
+TextRectTop=0
+TextBreakWidth=0
+
+[Panel002Element016]
+Type=Scope
+PositionX=519
+PositionY=218
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-scope-on.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-scope-off.png
+MouseRadius=0
+TextBreakWidth=0
+
+[Panel002Element017]
+Type=Scoped
+PositionX=599
+PositionY=218
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-scoped-on.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-scope-off.png
+MouseRadius=0
+TextBreakWidth=0
+
+[Panel002Element018]
+Type=CrescendoLabel
+PositionX=794
+PositionY=87
+DispLabelColour=WHITE
+DispLabelFontSize=15
+Image=OrganInstallationPackages\001161\IMAGES FILES\FIXED\DISPLAYS\display-crescendo.png
+
+[Panel002Element019]
+Type=CrescendoA
+PositionX=770
+PositionY=155
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-crescendoa-on.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-crescendoa-off.png
+MouseRadius=0
+TextBreakWidth=0
+
+[Panel002Element020]
+Type=CrescendoB
+PositionX=848
+PositionY=155
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-crescendob-on.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-crescendob-off.png
+MouseRadius=0
+TextBreakWidth=0
+
+[Panel002Element021]
+Type=CrescendoC
+PositionX=770
+PositionY=209
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-crescendoc-on.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-crescendoc-off.png
+MouseRadius=0
+TextBreakWidth=0
+
+[Panel002Element022]
+Type=CrescendoD
+PositionX=848
+PositionY=209
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-crescendod-on.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-crescendod-off.png
+MouseRadius=0
+TextBreakWidth=0
+
+[Panel002Element023]
+Type=CrescendoOverride
+PositionX=777
+PositionY=259
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FIXED\LEDS\led-crescendooverride-on.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FIXED\LEDS\led-crescendooverride-off.png
+MouseRectWidth=1
+MouseRectHeight=1
+TextBreakWidth=0
+
+[Panel002Element024]
 Type=CurrFileName
 DispXpos=42
 DispYpos=359
@@ -3707,7 +3958,7 @@ DispLabelColour=WHITE
 DispLabelFontSize=LARGE
 Image=OrganInstallationPackages\001161\IMAGES FILES\ORGAN SETTINGS\DISPLAYS\display-files.png
 
-[Panel001Element025]
+[Panel002Element025]
 Type=RefreshFiles
 PositionX=20
 PositionY=421
@@ -3716,7 +3967,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\ORGAN SETTINGS\BUTTONS\bt
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel001Element026]
+[Panel002Element026]
 Type=PrevFile
 PositionX=98
 PositionY=421
@@ -3725,7 +3976,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\ORGAN SETTINGS\BUTTONS\bt
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel001Element027]
+[Panel002Element027]
 Type=NextFile
 PositionX=176
 PositionY=421
@@ -3734,7 +3985,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\ORGAN SETTINGS\BUTTONS\bt
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel001Element028]
+[Panel002Element028]
 Type=LoadFile
 PositionX=254
 PositionY=421
@@ -3743,7 +3994,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\ORGAN SETTINGS\BUTTONS\bt
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel001Element029]
+[Panel002Element029]
 Type=PitchLabel
 DispXpos=462
 DispYpos=352
@@ -3751,7 +4002,7 @@ DispLabelColour=WHITE
 DispLabelFontSize=8
 Image=OrganInstallationPackages\001161\IMAGES FILES\FIXED\DISPLAYS\display-numbers.png
 
-[Panel001Element030]
+[Panel002Element030]
 Type=PitchM100
 PositionX=359
 PositionY=378
@@ -3760,7 +4011,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\ORGAN SETTINGS\BUTTONS\bt
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel001Element031]
+[Panel002Element031]
 Type=PitchM10
 PositionX=359
 PositionY=432
@@ -3769,7 +4020,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\ORGAN SETTINGS\BUTTONS\bt
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel001Element032]
+[Panel002Element032]
 Type=PitchM1
 PositionX=437
 PositionY=432
@@ -3778,7 +4029,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\ORGAN SETTINGS\BUTTONS\bt
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel001Element033]
+[Panel002Element033]
 Type=PitchP1
 PositionX=515
 PositionY=432
@@ -3787,7 +4038,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\ORGAN SETTINGS\BUTTONS\bt
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel001Element034]
+[Panel002Element034]
 Type=PitchP10
 PositionX=593
 PositionY=432
@@ -3796,7 +4047,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\ORGAN SETTINGS\BUTTONS\bt
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel001Element035]
+[Panel002Element035]
 Type=PitchP100
 PositionX=596
 PositionY=378
@@ -3805,7 +4056,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\ORGAN SETTINGS\BUTTONS\bt
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel001Element036]
+[Panel002Element036]
 Type=Coupler
 Manual=003
 Coupler=003
@@ -3816,7 +4067,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\ORGAN SETTINGS\BUTTONS\bt
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel001Element037]
+[Panel002Element037]
 Type=Coupler
 Manual=003
 Coupler=004
@@ -3827,7 +4078,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\ORGAN SETTINGS\BUTTONS\bt
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel001Element038]
+[Panel002Element038]
 Type=Stop
 Manual=005
 Stop=001
@@ -3838,7 +4089,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\ORGAN SETTINGS\BUTTONS\bt
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel001Element039]
+[Panel002Element039]
 Type=Save
 PositionX=254
 PositionY=523
@@ -3847,7 +4098,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\ORGAN SETTINGS\BUTTONS\bt
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel001Element040]
+[Panel002Element040]
 Type=TemperamentPrev
 PositionX=359
 PositionY=523
@@ -3856,7 +4107,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\ORGAN SETTINGS\BUTTONS\bt
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel001Element041]
+[Panel002Element041]
 Type=TemperamentLabel
 DispXpos=432
 DispYpos=515
@@ -3865,7 +4116,7 @@ DispLabelFontSize=LARGE
 Image=OrganInstallationPackages\001161\IMAGES FILES\ORGAN SETTINGS\DISPLAYS\displaay-temperaments.png
 TextBreakWidth=136
 
-[Panel001Element042]
+[Panel002Element042]
 Type=TemperamentNext
 PositionX=596
 PositionY=523
@@ -3874,7 +4125,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\ORGAN SETTINGS\BUTTONS\bt
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel001Element043]
+[Panel002Element043]
 Type=CrescendoLabel
 PositionX=796
 PositionY=357
@@ -3882,7 +4133,7 @@ DispLabelColour=WHITE
 DispLabelFontSize=15
 Image=OrganInstallationPackages\001161\IMAGES FILES\FIXED\DISPLAYS\display-numbers.png
 
-[Panel001Element044]
+[Panel002Element044]
 Type=CrescendoA
 PositionX=694
 PositionY=432
@@ -3891,7 +4142,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-crescen
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel001Element045]
+[Panel002Element045]
 Type=CrescendoB
 PositionX=772
 PositionY=432
@@ -3900,7 +4151,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-crescen
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel001Element046]
+[Panel002Element046]
 Type=CrescendoC
 PositionX=850
 PositionY=432
@@ -3909,7 +4160,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-crescen
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel001Element047]
+[Panel002Element047]
 Type=CrescendoD
 PositionX=928
 PositionY=432
@@ -3918,7 +4169,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FIXED\BUTTONS\btn-crescen
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel001Element048]
+[Panel002Element048]
 Type=CrescendoPrev
 PositionX=694
 PositionY=486
@@ -3927,7 +4178,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\ORGAN SETTINGS\BUTTONS\bt
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel001Element049]
+[Panel002Element049]
 Type=CrescendoNext
 PositionX=772
 PositionY=486
@@ -3936,7 +4187,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\ORGAN SETTINGS\BUTTONS\bt
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel001Element050]
+[Panel002Element050]
 Type=CrescendoCurrent
 PositionX=850
 PositionY=486
@@ -3945,7 +4196,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\ORGAN SETTINGS\BUTTONS\bt
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel001Element051]
+[Panel002Element051]
 Type=CrescendoOverride
 PositionX=928
 PositionY=486
@@ -3954,7 +4205,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\ORGAN SETTINGS\BUTTONS\bt
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel001Element052]
+[Panel002Element052]
 Type=Set
 PositionX=811
 PositionY=540
@@ -3965,7 +4216,7 @@ TextRectLeft=0
 TextBreakWidth=0
 
 
-[Panel002]
+[Panel003]
 Name=MIDI Mapping
 HasPedals=Y
 NumberOfImages=1
@@ -3996,10 +4247,10 @@ DispTrimBelowManuals=N
 DispTrimAboveExtraRows=Y
 DispExtraDrawstopRowsAboveExtraButtonRows=N
 
-[Panel002Image001]
+[Panel003Image001]
 Image=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\backgroud-midimapping.png
 
-[Panel002Element001]
+[Panel003Element001]
 Type=CurrFileName
 PositionX=750
 PositionY=8
@@ -4007,25 +4258,25 @@ DispLabelColour=WHITE
 DispLabelFontSize=11
 Image=OrganInstallationPackages\001161\IMAGES FILES\FIXED\DISPLAYS\display-combsfilename.png
 
-[Panel002Element002]
+[Panel003Element002]
 Type=Manual
 Manual=001
 PositionX=389
 PositionY=213
 
-[Panel002Element003]
+[Panel003Element003]
 Type=Manual
 Manual=002
 PositionX=66
 PositionY=140
 
-[Panel002Element004]
+[Panel003Element004]
 Type=Manual
 Manual=003
 PositionX=523
 PositionY=140
 
-[Panel002Element005]
+[Panel003Element005]
 Type=Stop
 Manual=001
 Stop=002
@@ -4036,7 +4287,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\p-of
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element006]
+[Panel003Element006]
 Type=Stop
 Manual=001
 Stop=004
@@ -4047,7 +4298,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\p-of
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element007]
+[Panel003Element007]
 Type=Stop
 Manual=001
 Stop=008
@@ -4058,7 +4309,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\p-of
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element008]
+[Panel003Element008]
 Type=Stop
 Manual=002
 Stop=001
@@ -4069,7 +4320,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\i-of
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element009]
+[Panel003Element009]
 Type=Stop
 Manual=002
 Stop=002
@@ -4080,7 +4331,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\i-of
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element010]
+[Panel003Element010]
 Type=Stop
 Manual=002
 Stop=003
@@ -4091,7 +4342,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\i-of
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element011]
+[Panel003Element011]
 Type=Stop
 Manual=002
 Stop=005
@@ -4102,7 +4353,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\i-of
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element012]
+[Panel003Element012]
 Type=Stop
 Manual=002
 Stop=006
@@ -4113,7 +4364,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\i-of
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element013]
+[Panel003Element013]
 Type=Stop
 Manual=002
 Stop=008
@@ -4124,7 +4375,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\i-of
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element014]
+[Panel003Element014]
 Type=Stop
 Manual=002
 Stop=010
@@ -4135,7 +4386,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\i-of
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element015]
+[Panel003Element015]
 Type=Stop
 Manual=003
 Stop=001
@@ -4146,7 +4397,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\ii-o
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element016]
+[Panel003Element016]
 Type=Stop
 Manual=003
 Stop=003
@@ -4157,7 +4408,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\ii-o
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element017]
+[Panel003Element017]
 Type=Stop
 Manual=003
 Stop=004
@@ -4168,7 +4419,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\ii-o
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element018]
+[Panel003Element018]
 Type=Stop
 Manual=003
 Stop=005
@@ -4179,18 +4430,16 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\ii-o
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element019]
+[Panel003Element019]
 Type=Stop
 Manual=003
 Stop=007
 PositionX=369
 PositionY=403
-ImageOn=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\ii-on-quinte-22:3.png
-ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\ii-off-quinte-22:3.png
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element020]
+[Panel003Element020]
 Type=Stop
 Manual=003
 Stop=009
@@ -4201,7 +4450,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\ii-o
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element021]
+[Panel003Element021]
 Type=Set
 PositionX=659
 PositionY=283
@@ -4210,7 +4459,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\cb-o
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element022]
+[Panel003Element022]
 Type=GC
 PositionX=735
 PositionY=283
@@ -4219,7 +4468,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\cb-o
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element023]
+[Panel003Element023]
 Type=Prev
 PositionX=811
 PositionY=283
@@ -4228,7 +4477,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\cb-o
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element024]
+[Panel003Element024]
 Type=Next
 PositionX=887
 PositionY=283
@@ -4237,7 +4486,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\cb-o
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element025]
+[Panel003Element025]
 Type=L0
 PositionX=659
 PositionY=334
@@ -4246,7 +4495,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\cb-o
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element026]
+[Panel003Element026]
 Type=L1
 PositionX=735
 PositionY=334
@@ -4255,7 +4504,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\cb-o
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element027]
+[Panel003Element027]
 Type=L2
 PositionX=811
 PositionY=335
@@ -4264,7 +4513,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\cb-o
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element028]
+[Panel003Element028]
 Type=L3
 PositionX=887
 PositionY=335
@@ -4273,7 +4522,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\cb-o
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element029]
+[Panel003Element029]
 Type=L4
 PositionX=659
 PositionY=385
@@ -4282,7 +4531,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\cb-o
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element030]
+[Panel003Element030]
 Type=L5
 PositionX=735
 PositionY=385
@@ -4291,7 +4540,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\cb-o
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element031]
+[Panel003Element031]
 Type=L6
 PositionX=811
 PositionY=385
@@ -4300,7 +4549,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\cb-o
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element032]
+[Panel003Element032]
 Type=L7
 PositionX=887
 PositionY=385
@@ -4309,7 +4558,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\cb-o
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element033]
+[Panel003Element033]
 Type=L8
 PositionX=735
 PositionY=436
@@ -4318,7 +4567,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\cb-o
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element034]
+[Panel003Element034]
 Type=L9
 PositionX=811
 PositionY=436
@@ -4327,7 +4576,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\cb-o
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element035]
+[Panel003Element035]
 Type=General
 General=001
 PositionX=697
@@ -4337,7 +4586,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\cb-o
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element036]
+[Panel003Element036]
 Type=General
 General=002
 PositionX=773
@@ -4347,7 +4596,7 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\cb-o
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element037]
+[Panel003Element037]
 Type=General
 General=003
 PositionX=849
@@ -4357,25 +4606,68 @@ ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\cb-o
 MouseRadius=0
 TextBreakWidth=0
 
-[Panel002Element038]
+[Panel003Element038]
 Type=Enclosure
 Enclosure=003
 PositionX=125
 PositionY=488
 EnclosureStyle=3
 
-[Panel002Element039]
+[Panel003Element039]
 Type=Enclosure
 Enclosure=002
 PositionX=191
 PositionY=488
 EnclosureStyle=3
 
-[Panel002Element040]
+[Panel003Element040]
 Type=Enclosure
 Enclosure=001
 PositionX=257
 PositionY=488
 EnclosureStyle=3
+
+
+[Panel004]
+Name=About
+HasPedals=Y
+NumberOfImages=1
+NumberOfGUIElements=1
+DispScreenSizeHoriz=1024
+DispScreenSizeVert=600
+DispDrawstopBackgroundImageNum=2
+DispConsoleBackgroundImageNum=2
+DispKeyHorizBackgroundImageNum=2
+DispKeyVertBackgroundImageNum=2
+DispDrawstopInsetBackgroundImageNum=2
+DispControlLabelFont=Arial
+DispShortcutKeyLabelFont=Arial
+DispShortcutKeyLabelColour=BLACK
+DispGroupLabelFont=Arial
+DispDrawstopCols=2
+DispDrawstopRows=1
+DispDrawstopColsOffset=N
+DispPairDrawstopCols=N
+DispExtraDrawstopRows=0
+DispExtraDrawstopCols=0
+DispButtonCols=1
+DispExtraButtonRows=0
+DispExtraPedalButtonRow=N
+DispButtonsAboveManuals=N
+DispTrimAboveManuals=N
+DispTrimBelowManuals=N
+DispTrimAboveExtraRows=Y
+DispExtraDrawstopRowsAboveExtraButtonRows=N
+
+[Panel004Image001]
+Image=OrganInstallationPackages\001161\IMAGES FILES\ABOUT\backgroud-about.png
+
+[Panel004Element001]
+Type=CurrFileName
+PositionX=750
+PositionY=8
+DispLabelColour=WHITE
+DispLabelFontSize=11
+Image=OrganInstallationPackages\001161\IMAGES FILES\FIXED\DISPLAYS\display-combsfilename.png
 
 
