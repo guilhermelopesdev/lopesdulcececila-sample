@@ -13,8 +13,8 @@ NumberOfWindchestGroups=5
 NumberOfReversiblePistons=0
 NumberOfGenerals=3
 NumberOfDivisionalCouplers=0
-NumberOfPanels=4
-NumberOfSwitches=2
+NumberOfPanels=5
+NumberOfSwitches=10
 NumberOfRanks=25
 DivisionalsStoreIntermanualCouplers=Y
 DivisionalsStoreIntramanualCouplers=Y
@@ -359,6 +359,62 @@ StoreInGeneral=N
 
 [Switch002]
 Name=External Light
+DefaultToEngaged=N
+GCState=-1
+StoreInDivisional=N
+StoreInGeneral=N
+
+[Switch003]
+Name=Import Combs
+DefaultToEngaged=N
+GCState=-1
+StoreInDivisional=N
+StoreInGeneral=N
+
+[Switch004]
+Name=Export Combs
+DefaultToEngaged=N
+GCState=-1
+StoreInDivisional=N
+StoreInGeneral=N
+
+[Switch005]
+Name=Import MIDI File
+DefaultToEngaged=N
+GCState=-1
+StoreInDivisional=N
+StoreInGeneral=N
+
+[Switch006]
+Name=Import Settings
+DefaultToEngaged=N
+GCState=-1
+StoreInDivisional=N
+StoreInGeneral=N
+
+[Switch007]
+Name=Export Settings
+DefaultToEngaged=N
+GCState=-1
+StoreInDivisional=N
+StoreInGeneral=N
+
+[Switch008]
+Name=Organ List
+DefaultToEngaged=N
+GCState=-1
+StoreInDivisional=N
+StoreInGeneral=N
+
+[Switch009]
+Name=Load Organ
+DefaultToEngaged=N
+GCState=-1
+StoreInDivisional=N
+StoreInGeneral=N
+
+[Switch010]
+Name=Reload Organ
 DefaultToEngaged=N
 GCState=-1
 StoreInDivisional=N
@@ -4436,6 +4492,8 @@ Manual=003
 Stop=007
 PositionX=369
 PositionY=403
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\ii-on-quinte-22:3.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\MIDI MAPPING\BUTTONS\ii-off-quinte-22:3.png
 MouseRadius=0
 TextBreakWidth=0
 
@@ -4669,5 +4727,128 @@ PositionY=8
 DispLabelColour=WHITE
 DispLabelFontSize=11
 Image=OrganInstallationPackages\001161\IMAGES FILES\FIXED\DISPLAYS\display-combsfilename.png
+
+
+[Panel005]
+Name=Files
+HasPedals=Y
+NumberOfImages=1
+NumberOfGUIElements=9
+DispScreenSizeHoriz=1024
+DispScreenSizeVert=600
+DispDrawstopBackgroundImageNum=2
+DispConsoleBackgroundImageNum=2
+DispKeyHorizBackgroundImageNum=2
+DispKeyVertBackgroundImageNum=2
+DispDrawstopInsetBackgroundImageNum=2
+DispControlLabelFont=Arial
+DispShortcutKeyLabelFont=Arial
+DispShortcutKeyLabelColour=BLACK
+DispGroupLabelFont=Arial
+DispDrawstopCols=2
+DispDrawstopRows=1
+DispDrawstopColsOffset=N
+DispPairDrawstopCols=N
+DispExtraDrawstopRows=0
+DispExtraDrawstopCols=0
+DispButtonCols=1
+DispExtraButtonRows=0
+DispExtraPedalButtonRow=N
+DispButtonsAboveManuals=N
+DispTrimAboveManuals=N
+DispTrimBelowManuals=N
+DispTrimAboveExtraRows=Y
+DispExtraDrawstopRowsAboveExtraButtonRows=N
+
+[Panel005Image001]
+Image=OrganInstallationPackages\001161\IMAGES FILES\FILES\backgroud-files.png
+
+[Panel005Element001]
+Type=CurrFileName
+PositionX=750
+PositionY=8
+DispLabelColour=WHITE
+DispLabelFontSize=11
+Image=OrganInstallationPackages\001161\IMAGES FILES\FIXED\DISPLAYS\display-combsfilename.png
+
+[Panel005Element002]
+Type=Switch
+Switch=003
+PositionX=94
+PositionY=164
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FILES\BUTTONS\btn-importcombs.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FILES\BUTTONS\btn-importcombs.png
+MouseRadius=0
+TextBreakWidth=0
+
+[Panel005Element003]
+Type=Switch
+Switch=004
+PositionX=269
+PositionY=164
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FILES\BUTTONS\btn-exportcombs.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FILES\BUTTONS\btn-exportcombs.png
+MouseRadius=0
+TextBreakWidth=0
+
+[Panel005Element004]
+Type=Switch
+Switch=005
+PositionX=444
+PositionY=164
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FILES\BUTTONS\btn-importmidifile.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FILES\BUTTONS\btn-importmidifile.png
+MouseRadius=0
+TextBreakWidth=0
+
+[Panel005Element005]
+Type=Switch
+Switch=006
+PositionX=619
+PositionY=164
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FILES\BUTTONS\btn-importsettings.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FILES\BUTTONS\btn-importsettings.png
+MouseRadius=0
+TextBreakWidth=0
+
+[Panel005Element006]
+Type=Switch
+Switch=007
+PositionX=794
+PositionY=164
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FILES\BUTTONS\btn-exportsettings.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FILES\BUTTONS\btn-exportsettings.png
+MouseRadius=0
+TextBreakWidth=0
+
+[Panel005Element007]
+Type=Switch
+Switch=008
+PositionX=269
+PositionY=322
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FILES\BUTTONS\btn-organlist.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FILES\BUTTONS\btn-organlist.png
+MouseRadius=0
+TextBreakWidth=0
+
+[Panel005Element008]
+Type=Switch
+Switch=009
+PositionX=444
+PositionY=322
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FILES\BUTTONS\btn-loadorgan.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FILES\BUTTONS\btn-loadorgan.png
+MouseRadius=0
+TextBreakWidth=0
+
+[Panel005Element009]
+Type=Switch
+Switch=010
+PositionX=619
+PositionY=322
+ImageOn=OrganInstallationPackages\001161\IMAGES FILES\FILES\BUTTONS\btn-reloadorgan.png
+ImageOff=OrganInstallationPackages\001161\IMAGES FILES\FILES\BUTTONS\btn-reloadorgan.png
+MouseRadius=0
+TextBreakWidth=0
 
 
